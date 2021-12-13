@@ -1,0 +1,16 @@
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--main-light-color);
+  color: var(--main-dark-color);
+  letter-spacing: 0.03em;
+}
+
+.section {
+  padding: 94px 0px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

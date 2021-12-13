@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portfolio</title>
   </head>
@@ -314,93 +315,105 @@
       </section>
     </main>
 
-    <footer class="section footer">
+    <footer class="footer">
       <div class="conteiner">
-        <div class="footer_join">
-          <div class="logo-plus-adrs">
-            <a
-              class="logo bottom"
-              href="./index.html"
-              title="Main WebStudio Page"
-              lang="en"
-              >Web<span class="logo-studio-footer">Studio</span></a
-            >
+        <!-- <div class="footer_join"> -->
+        <div class="logo-plus-adrs">
+          <a
+            class="logo bottom"
+            href="./index.html"
+            title="Main WebStudio Page"
+            lang="en"
+            >Web<span class="logo-studio-footer">Studio</span></a
+          >
 
-            <address class="address">
-              <ul class="address-list">
-                <li class="address-item">
-                  <a
-                    class="actual-address"
-                    href="https://goo.gl/maps/LLQT8x69fdLDBn1G6"
-                    >г. Киев, пр-т Леси Украинки, 26</a
-                  >
-                </li>
-                <li class="address-item">
-                  <a
-                    class="footer-contact-reference"
-                    href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
-                </li>
-                <li class="address-item">
-                  <a class="footer-contact-reference" href="tel:+380991111111"
-                    >+38 099 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
-
-          <div class="social_footer">
-            <p class="social-title">присоединяйтесь</p>
-            <ul class="soc-list-footer">
-              <li class="soc-link-footer">
+          <address class="address">
+            <ul class="address-list">
+              <li class="address-item">
                 <a
-                  class="soc-link-item-footer"
-                  href="https://www.instagram.com/"
-                  target="_blank"
+                  class="actual-address"
+                  href="https://goo.gl/maps/LLQT8x69fdLDBn1G6"
+                  >г. Киев, пр-т Леси Украинки, 26</a
                 >
-                  <svg class="link-logo-footer">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
               </li>
-              <li class="soc-link-footer">
+              <li class="address-item">
                 <a
-                  class="soc-link-item-footer"
-                  href="https://twitter.com/?lang=en"
-                  target="_blank"
+                  class="footer-contact-reference"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
                 >
-                  <svg class="link-logo-footer">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
               </li>
-              <li class="soc-link-footer">
-                <a
-                  class="soc-link-item-footer"
-                  href="https://www.facebook.com/"
-                  target="_blank"
+              <li class="address-item">
+                <a class="footer-contact-reference" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
                 >
-                  <svg class="link-logo-footer">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="soc-link-footer">
-                <a
-                  class="soc-link-item-footer"
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                >
-                  <svg class="link-logo-footer">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
               </li>
             </ul>
-          </div>
+          </address>
         </div>
+
+        <div class="social_footer">
+          <p class="social-title">присоединяйтесь</p>
+          <ul class="list soc-list-footer">
+            <li class="soc-link-footer">
+              <a
+                class="soc-link-item-footer"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <svg class="link-logo-footer">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-link-footer">
+              <a
+                class="soc-link-item-footer"
+                href="https://twitter.com/?lang=en"
+                target="_blank"
+              >
+                <svg class="link-logo-footer">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-link-footer">
+              <a
+                class="soc-link-item-footer"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <svg class="link-logo-footer">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-link-footer">
+              <a
+                class="soc-link-item-footer"
+                href="https://www.linkedin.com/"
+                target="_blank"
+              >
+                <svg class="link-logo-footer">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="subscribe-footer">
+          <p class="subscribe-title">подпишись на рассылку</p>
+          <div class="list subscribe-wrap">
+            <input class="subscribe-inpute" type="text" placeholder="E-mail" />
+            <button class="btn subscribe-btn" type="submit">
+              Подписаться
+              <svg class="send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>

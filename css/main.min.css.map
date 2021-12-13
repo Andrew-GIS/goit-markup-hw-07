@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,AAAA,gBAAgB,AAAC,CACf,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,CACX,MAAM,CAAE,IAAI,CACZ,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,WAAW,CAAE,MAAM,CACnB,SAAS,CAAE,WAAW,CACtB,IAAI,CAAE,aAAa,CACnB,QAAQ,CAAE,MAAM,CACjB",
     "sources": [
-        "../sass/utils/main.scss"
+        "../sass/utils/main.scss",
+        "../sass/utils/_visually-hidden.scss"
     ],
     "names": [],
     "file": "main.min.css"

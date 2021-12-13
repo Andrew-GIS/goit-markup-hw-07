@@ -1,0 +1,43 @@
+.what-we-do {
+  padding-top: 0px;
+  &-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: inherit;
+  }
+  &-list {
+    display: flex;
+  }
+  &-item {
+    margin-right: 30px;
+    position: relative;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.description {
+  position: absolute;
+  z-index: 1;
+  bottom: 0%;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 70px;
+  &-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--main-light-color);
+  }
+}
