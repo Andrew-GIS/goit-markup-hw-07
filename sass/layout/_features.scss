@@ -1,62 +1,82 @@
 .features-item {
   width: 270px;
   margin-right: 30px;
+  &:last-child {
+    margin-right: 0px;
+  }
+  &:before {
+    display: block;
+    height: 120px;
+    width: inherit;
+    background-color: #f5f4fa;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+  &-header {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: inherit;
+  }
+  &-text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--middle-main-color);
+  }
 }
 
-.features-item:last-child {
-  margin-right: 0px;
+.icon-antenna {
+  &::before {
+    content: "";
+    background-image: url("../images/studio_image/antenna.svg");
+  }
 }
 
-.features-item::before {
-  display: block;
-
-  height: 120px;
-  width: inherit;
-  background-color: #f5f4fa;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px 70px;
-  margin-bottom: 30px;
-  border-radius: 4px;
+.icon-clock {
+  &::before {
+    content: "";
+    background-image: url("../images/studio_image/clock.svg");
+  }
 }
 
-.icon-antenna::before {
-  content: "";
-  background-image: url("../images/studio_image/antenna.svg");
+.icon-diagram {
+  &::before {
+    content: "";
+    background-image: url("../images/studio_image/diagram.svg");
+  }
 }
 
-.icon-clock::before {
-  content: "";
-  background-image: url("../images/studio_image/clock.svg");
+.icon-astronaut {
+  &::before {
+    content: "";
+    background-image: url("../images/studio_image/astronaut.svg");
+  }
 }
 
-.icon-diagram::before {
-  content: "";
-  background-image: url("../images/studio_image/diagram.svg");
-}
+// .feature-logos {
+//   &:hover,
+//   &:focus {
+//     fill: var(--accent-color);
+//   }
+// }
 
-.icon-astronaut::before {
-  content: "";
-  background-image: url("../images/studio_image/astronaut.svg");
-}
+// .features-item-header {
+//   margin-bottom: 10px;
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   text-transform: uppercase;
+//   color: inherit;
+// }
 
-.feature-logo:hover,
-.feature-logo:focus {
-  fill: var(--accent-color);
-}
-
-.features-item-header {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: inherit;
-}
-
-.features-item-text {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--middle-main-color);
-}
+// .features-item-text {
+//   font-size: 14px;
+//   line-height: 1.71;
+//   color: var(--middle-main-color);
+// }
