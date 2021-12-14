@@ -8,19 +8,19 @@
   }
 }
 
-.bottom {
+.bottom-position {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
 }
 
-.logo-plus-adrs {
+.logo-adrs-conteiner {
   margin-right: 70px;
 }
 
 .address {
   font-style: normal;
-  &-item {
+  &__item {
     margin-bottom: 9px;
     font-size: 14px;
     line-height: 1.71;
@@ -33,16 +33,19 @@
   }
 }
 
-.footer-contact-reference {
-  color: var(--middle-main-color);
-  text-decoration: none;
-  &:hover,
-  &:focus {
-    color: var(--blue-color-hover);
+.address__item {
+  .contact__reference {
+    padding: 0;
+    color: var(--middle-main-color);
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: var(--blue-color-hover);
+    }
   }
 }
 
-.actual-address {
+.address__actual {
   color: var(--main-light-color);
   text-decoration: none;
   transition: color var(--transition-duration) var(--transition-hover);
@@ -52,9 +55,9 @@
   }
 }
 
-.social_footer {
+.social {
   margin-right: auto;
-  .social-title {
+  &__title {
     margin-bottom: 20px;
     text-transform: uppercase;
     color: var(--main-light-color);
@@ -62,9 +65,9 @@
     font-size: 14px;
     line-height: 1.14;
   }
-  .soc-list-footer {
+  &__list {
     display: flex;
-    .soc-link-footer {
+    .social__link {
       width: 44px;
       height: 44px;
       border-radius: 50%;
@@ -76,7 +79,7 @@
   }
 }
 
-.soc-link-item-footer {
+.social__link--item {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -84,7 +87,7 @@
   align-items: center;
   justify-content: center;
   transition: background var(--transition-duration) var(--transition-hover);
-  .link-logo-footer {
+  .social__link--logo {
     width: 20px;
     height: 20px;
     fill: var(--main-light-color);
@@ -96,7 +99,7 @@
 }
 
 .subscribe {
-  &-title {
+  &__title {
     margin-bottom: 20px;
     text-transform: uppercase;
     color: var(--main-light-color);
@@ -104,11 +107,11 @@
     font-size: 14px;
     line-height: 1.14;
   }
-  &-wrap {
+  &__wrap {
     display: flex;
     align-items: center;
     justify-content: center;
-    .subscribe-inpute {
+    .subscribe__inpute {
       background: var(--additional-color);
       color: rgba(255, 255, 255, 0.6);
       width: 358px;
@@ -120,7 +123,7 @@
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
       border-radius: 4px;
     }
-    .subscribe-btn {
+    .subscribe__btn {
       width: 200px;
       height: 50px;
       padding: 10px 28px;
@@ -142,7 +145,7 @@
   }
 }
 
-.subscribe-inpute {
+.subscribe__inpute {
   &::placeholder {
     font-weight: normal;
     font-size: 16px;

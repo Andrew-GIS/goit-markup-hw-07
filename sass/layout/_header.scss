@@ -11,13 +11,13 @@
 .navigation {
   &-links {
     display: flex;
-    &-item.current-page {
+    &__item.current-page {
       color: var(--accent-color);
     }
   }
 }
 
-.navigation-links-item {
+.navigation-links__item {
   margin-right: 50px;
   font-weight: 500;
   font-style: normal;
@@ -38,7 +38,7 @@
   }
 }
 
-.nav-link-reference {
+.navigation-link__reference {
   padding: 32px 0px;
   color: inherit;
   text-decoration: none;
@@ -58,29 +58,16 @@
 .contact-list {
   display: flex;
   margin-left: auto;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  &:not(:last-child) {
-    margin-right: 50px;
+  .contact__item {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
-.icon {
-  fill: var(--middle-main-color);
-  margin-right: 10px;
-  justify-content: center;
-  &.envelope {
-    transition: fill var(--transition-duration) var(--transition-hover);
-  }
-  &.phone {
-    transition: fill var(--transition-duration) var(--transition-hover);
-  }
-}
-
-.nav-contact-reference {
+.contact__reference {
   padding: 32px 0px;
   color: var(--middle-main-color);
   text-decoration: none;
@@ -95,5 +82,17 @@
     .phone {
       fill: var(--accent-color);
     }
+  }
+}
+
+.icon {
+  fill: var(--middle-main-color);
+  margin-right: 10px;
+  justify-content: center;
+  &.envelope {
+    transition: fill var(--transition-duration) var(--transition-hover);
+  }
+  &.phone {
+    transition: fill var(--transition-duration) var(--transition-hover);
   }
 }

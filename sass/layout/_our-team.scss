@@ -1,9 +1,9 @@
 .our-team {
   background-color: var(--background-section-color);
-  &-list {
+  &__list {
     display: flex;
   }
-  &-title {
+  &__title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -11,7 +11,7 @@
     text-align: center;
     color: inherit;
   }
-  &-item {
+  &__item {
     margin-right: 30px;
     font-size: 16px;
     line-height: 1.18;
@@ -26,26 +26,25 @@
   }
 }
 
-.member-info {
+.member {
   padding: 30px 24px;
   text-align: center;
-  .member-name {
+  &__name {
     padding-left: auto;
     padding-right: auto;
     margin-bottom: 10px;
     font-weight: 500;
     color: inherit;
   }
-  .member-position {
+  &__position {
     color: var(--middle-main-color);
     margin-bottom: 16px;
   }
 }
 
-.member-social-links {
-  display: flex;
+.member__social-links {
   flex-direction: row;
-  width: 206px;
+  width: 100%;
   align-items: center;
   justify-content: center;
   .soc-link {
@@ -69,7 +68,7 @@
   transition-property: background-color, color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-hover);
-  &-item {
+  &__item {
     width: 20px;
     height: 20px;
     fill: currentColor;
@@ -77,8 +76,8 @@
   &:hover,
   &:focus {
     background-color: var(--accent-color);
-    .member-link-item,
-    .member-link-item {
+    .member-link__item,
+    .member-link__item {
       color: var(--main-light-color);
     }
   }
