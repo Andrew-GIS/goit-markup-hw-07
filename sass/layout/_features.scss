@@ -16,7 +16,7 @@
     margin-bottom: 30px;
     border-radius: 4px;
   }
-  .item__header {
+  .features__header {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -24,37 +24,36 @@
     text-transform: uppercase;
     color: inherit;
   }
-  .item__text {
+  .features__text {
     font-size: 14px;
     line-height: 1.71;
     color: var(--middle-main-color);
   }
 }
 
-.icon-antenna {
-  &::before {
-    content: "";
-    background-image: url("../images/studio_image/antenna.svg");
+.icon {
+  &-antenna {
+    &::before {
+      content: "";
+      background-image: url("../images/studio_image/antenna.svg");
+    }
   }
-}
-
-.icon-clock {
-  &::before {
-    content: "";
-    background-image: url("../images/studio_image/clock.svg");
+  &-clock {
+    &::before {
+      content: "";
+      background-image: url("../images/studio_image/clock.svg");
+    }
   }
-}
-
-.icon-diagram {
-  &::before {
-    content: "";
-    background-image: url("../images/studio_image/diagram.svg");
+  &-diagram {
+    &::before {
+      content: "";
+      background-image: url("../images/studio_image/diagram.svg");
+    }
   }
-}
-
-.icon-astronaut {
-  &::before {
-    content: "";
-    background-image: url("../images/studio_image/astronaut.svg");
+  &-astronaut {
+    &::before {
+      content: "";
+      background-image: url("../images/studio_image/astronaut.svg");
+    }
   }
 }

@@ -1,5 +1,5 @@
 .сlients {
-  .clients__title {
+  &__title {
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
@@ -8,45 +8,44 @@
     color: var(--main-dark-color);
     margin-bottom: 50px;
   }
-  &clients__list {
+  &__list {
     flex-wrap: wrap;
   }
-}
-
-.client__item {
-  width: 170px;
-  height: 92px;
-  &:not(:nth-child(3n + 6)) {
-    margin-right: 30px;
-  }
-  .client__link {
-    border: 1px solid var(--client-light-color);
-    box-sizing: border-box;
-    border-radius: 4px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--client-light-color);
-    transition-property: border-color, color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-hover);
-    .client__logo {
-      width: 106px;
-      height: 60px;
-      fill: currentColor;
-      transition-property: color;
+  .clients__item {
+    width: 170px;
+    height: 92px;
+    &:not(:nth-child(3n + 6)) {
+      margin-right: 30px;
+    }
+    .clients__link {
+      border: 1px solid var(--client-light-color);
+      box-sizing: border-box;
+      border-radius: 4px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--client-light-color);
+      transition-property: border-color, color;
       transition-duration: var(--transition-duration);
       transition-timing-function: var(--transition-hover);
-    }
-    &:hover,
-    &:focus {
-      border-color: var(--accent-color);
-    }
-    &:hover .client__logo,
-    &:focus .client__logo {
-      color: var(--accent-color);
+      .clients__logo {
+        width: 106px;
+        height: 60px;
+        fill: currentColor;
+        transition-property: color;
+        transition-duration: var(--transition-duration);
+        transition-timing-function: var(--transition-hover);
+      }
+      &:hover,
+      &:focus {
+        border-color: var(--accent-color);
+      }
+      &:hover .clients__logo,
+      &:focus .clients__logo {
+        color: var(--accent-color);
+      }
     }
   }
 }

@@ -9,11 +9,80 @@
   letter-spacing: 0.06em;
 }
 
-.btn-circle {
+.btn--circle {
   border-radius: 50%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.hero__button {
+  padding: 10px 32px;
+  min-width: 200px;
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+.submit--btn {
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  padding: 10px 55px;
+
+  font-weight: bold;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.btn--subscribe {
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn--portfolio {
+  height: 38px;
+  padding: 6px 22px;
+  min-width: auto;
+
+  white-space: nowrap;
+  background: var(--background-section-color);
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: inherit;
+  box-shadow: none;
+  transition: background var(--transition-duration) var(--transition-hover),
+    color var(--transition-duration) var(--transition-hover),
+    box-shadow var(--transition-duration) var(--transition-hover);
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+    color: var(--main-light-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.btn--current {
+  background: var(--accent-color);
+  color: var(--main-light-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }

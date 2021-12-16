@@ -11,7 +11,7 @@
     text-align: center;
     color: inherit;
   }
-  &__item {
+  &__card {
     margin-right: 30px;
     font-size: 16px;
     line-height: 1.18;
@@ -39,46 +39,5 @@
   &__position {
     color: var(--middle-main-color);
     margin-bottom: 16px;
-  }
-}
-
-.member__social-links {
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  .soc-link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
-  }
-}
-
-.member-link {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--client-light-color);
-  transition-property: background-color, color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-hover);
-  &__item {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-  }
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-    .member-link__item,
-    .member-link__item {
-      color: var(--main-light-color);
-    }
   }
 }

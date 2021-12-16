@@ -6,22 +6,20 @@
   line-height: 1.19;
   text-decoration: none;
   color: var(--accent-color);
-  .bottom {
+
+  &__studio-header {
+    color: var(--additional-dark-color);
+  }
+  &__studio--footer {
+    color: var(--main-light-color);
+  }
+  &__header {
+    padding: 24px 0 25px 0;
+    margin-right: 93px;
+  }
+  &__footer {
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
   }
-}
-
-.top-logo-position {
-  padding: 24px 0 25px 0;
-  margin-right: 93px;
-}
-
-.logo-studio-header {
-  color: var(--additional-dark-color);
-}
-
-.logo-studio-footer {
-  color: var(--main-light-color);
 }

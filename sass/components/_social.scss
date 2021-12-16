@@ -1,0 +1,65 @@
+.social__list {
+  display: flex;
+  .social__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    .social__link-item {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .social__link-logo {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+//footer.//
+.social--footer {
+  .social__list--footer {
+    .social__link--footer {
+      background: var(--soc-link-background);
+      .social__link-item--footer {
+        transition: background var(--transition-duration)
+          var(--transition-hover);
+        .social__link-logo--footer {
+          fill: var(--main-light-color);
+        }
+        &:hover,
+        &:focus {
+          background: var(--accent-color);
+        }
+      }
+    }
+  }
+}
+
+.social__list--our-team {
+  .social__link--our-team {
+    .social__link-item--our-team {
+      color: var(--client-light-color);
+      transition-property: background-color, color;
+      transition-duration: var(--transition-duration);
+      transition-timing-function: var(--transition-hover);
+      .social__link-logo--our-team {
+        fill: currentColor;
+      }
+      &:hover,
+      &:focus {
+        background-color: var(--accent-color);
+        .social__link-logo--our-team,
+        .social__link-logo--our-team {
+          color: var(--main-light-color);
+        }
+      }
+    }
+  }
+}
