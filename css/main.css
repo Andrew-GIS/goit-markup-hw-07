@@ -100,7 +100,7 @@ body {
   color: var(--accent-color);
 }
 
-.logo__studio-header {
+.logo__studio--header {
   color: var(--additional-dark-color);
 }
 
